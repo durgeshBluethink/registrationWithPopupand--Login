@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css"> <!-- You can keep shared styles in a separate CSS file -->
+</head>
+<body>
+    <form id="loginForm">
+        <h2>Login</h2>
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" required><br>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" required><br>
+
+        <button type="button" onclick="login()">Login</button>
+        <p id="registrationPrompt">If not registered, please <a href="registration.html">register</a>.</p>
+
+        <!-- Popup for displaying messages -->
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+            <p id="popupContent"></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+
+    </form>
+
+    <script src="login.js"></script> <!-- Link to the JavaScript file for login logic -->
+</body>
+</html>

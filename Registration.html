@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <form id="registrationForm">
+        <h2>Registration</h2>
+        <label for="regName">Name:</label>
+        <input type="text" id="regName" required><br>
+
+        <label for="regMobile">Mobile:</label>
+        <input type="text" id="regMobile" required><br>
+
+        <label for="regEmail">Email:</label>
+        <input type="email" id="regEmail" required><br>
+
+        <label for="regPassword">Password:</label>
+        <input type="password" id="regPassword" required><br>
+
+        <button type="button" onclick="register()">Register</button><br>
+
+        <p id="loginPrompt">If already registered, please <a href="login.html">Login</a>.</p>
+
+        <!-- Popup for displaying messages -->
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+            <p id="popupContent"></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+
+    </form>
+
+    <script src="registration.js"></script>
+</body>
+</html>
